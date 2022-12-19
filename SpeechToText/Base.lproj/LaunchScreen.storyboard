@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes" translatesAutoresizingMaskIntoConstraints="NO" id="eB4-Jp-mmW">
+                                <rect key="frame" x="101.5" y="371" width="211" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="PAZ-vc-oye"/>
+                                    <constraint firstAttribute="height" constant="164" id="rzV-VD-D8d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpeechToText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngi-ug-pBY">
+                                <rect key="frame" x="117" y="584" width="180.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.043137254901960784" green="0.070588235294117646" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ngi-ug-pBY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Em-ls-75m"/>
+                            <constraint firstItem="ngi-ug-pBY" firstAttribute="top" secondItem="eB4-Jp-mmW" secondAttribute="bottom" constant="49" id="1rb-QG-97A"/>
+                            <constraint firstItem="ngi-ug-pBY" firstAttribute="centerX" secondItem="eB4-Jp-mmW" secondAttribute="centerX" id="8ky-3d-gX9"/>
+                            <constraint firstItem="eB4-Jp-mmW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Jc4-F5-E2D"/>
+                            <constraint firstItem="eB4-Jp-mmW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rzn-Df-hnR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notes" width="512" height="512"/>
+    </resources>
+</document>
